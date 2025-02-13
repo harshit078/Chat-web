@@ -11,7 +11,7 @@ import { PaperPlaneIcon } from "@radix-ui/react-icons";
 import ThemeButton from "@/components/shared/ThemeButton";
 import { motion, AnimatePresence } from "framer-motion";
 
-const STRAPI_URL = "http://localhost:1337";
+const STRAPI_URL = "https://committed-desk-9b61e987b3.strapiapp.com";
 
 export default function Chat() {
   const [messages, setMessages] = useState([]);

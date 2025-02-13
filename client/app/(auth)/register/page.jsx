@@ -24,7 +24,7 @@ import {
   AlertCircle,
 } from "lucide-react";
 
-const STRAPI_URL = "http://localhost:1337";
+const STRAPI_URL = "https://committed-desk-9b61e987b3.strapiapp.com";
 
 const Register = () => {
   const [email, setEmail] = useState("");
