@@ -1,23 +1,23 @@
-import { ExitIcon } from "@radix-ui/react-icons"
-import { deleteCookie } from "cookies-next"
-import { Button } from "../ui/button.jsx"
-import { useRouter } from "next/navigation"
-import toast from "react-hot-toast"
-import { motion } from "framer-motion"
+import { ExitIcon } from "@radix-ui/react-icons";
+import { deleteCookie } from "cookies-next";
+import { Button } from "../ui/button.jsx";
+import { useRouter } from "next/navigation";
+import toast from "react-hot-toast";
+import { motion } from "framer-motion";
 
 const Logout = () => {
-  const router = useRouter()
+  const router = useRouter();
 
   const handleLogout = () => {
-    deleteCookie("jwt", { path: "/" })
-    deleteCookie("user", { path: "/" })
+    deleteCookie("jwt", { path: "/" });
+    deleteCookie("user", { path: "/" });
 
     toast.success("Logged out", {
       icon: "🚀",
-    })
+    });
 
-    router.push("/")
-  }
+    router.push("/");
+  };
 
   return (
     <motion.div
@@ -35,8 +35,7 @@ const Logout = () => {
         <ExitIcon className="w-8 h-5" />
       </Button>
     </motion.div>
-  )
-}
+  );
+};
 
-export default Logout
-
+export default Logout;

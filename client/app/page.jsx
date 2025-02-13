@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import ThemeButton from "@/components/shared/ThemeButton";
-import { MessageCircle, LogIn, UserPlus } from 'lucide-react';
+import { MessageCircle, LogIn, UserPlus } from "lucide-react";
 
 export default function Home() {
   return (
@@ -21,9 +21,10 @@ export default function Home() {
             Connect in real-time
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-400">
-           Chat with your friends and family in real time without any delay or network disturbances.
+            Chat with your friends and family in real time without any delay or
+            network disturbances.
           </p>
-          
+
           <div className="relative mt-32 flex justify-center">
             <div className="relative">
               <div className="absolute -inset-x-60  -top-20 -z-10 transform-gpu overflow-hidden blur-2xl">

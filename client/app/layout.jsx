@@ -1,7 +1,7 @@
 import { Jost } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/shared/ThemeProvider";
-import { Toaster } from 'react-hot-toast';
+import { Toaster } from "react-hot-toast";
 
 const jost = Jost({ subsets: ["latin"] });
 
@@ -23,7 +23,8 @@ export default function RootLayout({ children }) {
           {children}
           <Toaster
             toastOptions={{
-              className: "dark:bg-slate-800 dark:text-white text-black bg-white",
+              className:
+                "dark:bg-slate-800 dark:text-white text-black bg-white",
             }}
           />
         </ThemeProvider>
