@@ -16,9 +16,9 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-To run backend:
+## To run backend:
 
-Create a .env file and fill all the env variables neccessary to run the application.
+Create a ```.env``` file and fill all the env variables neccessary to run the application.
 
 ```bash
 cd server
