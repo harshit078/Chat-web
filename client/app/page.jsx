@@ -7,8 +7,7 @@ import { MessageCircle, LogIn, UserPlus } from 'lucide-react';
 export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-transparent to-gray-50 dark:from-transparent dark:to-gray-900/50">
-      <div className="mx-auto  px-4 sm:px-6 lg:px-8">
-        {/* Header Section */}
+      <div className="mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between pt-6">
           <div className="flex items-center gap-2">
             <MessageCircle className="h-8 w-8 text-blue-500" />
