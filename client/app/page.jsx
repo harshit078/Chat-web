@@ -44,7 +44,7 @@ export default function Home() {
         </div>
 
         {/* Cards */}
-        <div className="mx-auto mt-36 grid grid-cols-1 gap-6 sm:grid-cols-1 lg:grid-cols-2 lg:gap-12">
+        <div className="mx-auto mt-36 max-sm:mb-12 grid grid-cols-1 gap-6 sm:grid-cols-1 lg:grid-cols-2 lg:gap-12">
           <Link
             href="/login"
             className="group relative flex flex-col items-center rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition-all hover:shadow-md dark:border-gray-800 dark:bg-gray-800/50"
