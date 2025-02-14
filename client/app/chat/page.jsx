@@ -11,7 +11,7 @@ import { PaperPlaneIcon } from "@radix-ui/react-icons";
 import ThemeButton from "@/components/shared/ThemeButton";
 import { motion, AnimatePresence } from "framer-motion";
 
-const STRAPI_URL = "https://committed-desk-9b61e987b3.strapiapp.com";
+const STRAPI_URL = "https://charming-prosperity-2cd7125609.strapiapp.com";
 
 export default function Chat() {
   const [messages, setMessages] = useState([]);
@@ -83,7 +83,7 @@ export default function Chat() {
   }, [handleNewMessage, username]);
 
   const playSendMessageSound = () => {
-    const audio = new Audio("/send-message.mp3"); // Path to your sound file
+    const audio = new Audio("/send-message.mp3");
     audio.play();
   };
 
@@ -104,7 +104,7 @@ export default function Chat() {
   return (
     <div className="h-screen p-1 w-full bg-gray-100 dark:bg-gray-900 flex flex-col">
       <div className="flex justify-between items-center p-4 bg-white dark:bg-gray-800 shadow-md">
-        <h1 className="leading-[100%] text-4xl tracking-tight font-semibold text-gray-800 dark:text-white">
+        <h1 className="leading-[100%] font-bold text-4xl tracking-tight font-semibold text-gray-800 dark:text-white">
           Chat Room
         </h1>
         <div className="flex gap-4">
@@ -138,7 +138,7 @@ export default function Chat() {
           </AnimatePresence>
         </motion.div>
 
-        {/* Message bubble */}
+        {/* Message bubbles */}
         <div
           ref={messageContainerRef}
           className="flex-1 overflow-y-auto p-4 bg-white dark:bg-gray-800 space-y-4"
@@ -163,7 +163,7 @@ export default function Chat() {
           )}
         </div>
 
-        {/* Input Box */}
+        {/* Input container */}
         <div className="p-3 bg-white dark:bg-gray-800 shadow-lg sticky bottom-0">
           <form onSubmit={handleSubmit} className="flex gap-2">
             <Input

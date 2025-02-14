@@ -19,7 +19,7 @@ import { Label } from "@/components/ui/label";
 import Link from "next/link";
 import { Loader2, Mail, Lock, ArrowRight } from "lucide-react";
 
-const STRAPI_URL = "https://committed-desk-9b61e987b3.strapiapp.com";
+const STRAPI_URL = "https://charming-prosperity-2cd7125609.strapiapp.com";
 
 const Login = () => {
   const [email, setEmail] = useState("");

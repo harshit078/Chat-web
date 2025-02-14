@@ -7,24 +7,11 @@ import axios from "axios";
 import toast from "react-hot-toast";
 import { useRouter } from "next/navigation";
 import { setCookie } from "cookies-next";
-import {
-  Card,
-  CardHeader,
-  CardTitle,
-  CardDescription,
-  CardContent,
-} from "@/components/ui/card";
-import { Label } from "@/components/ui/label";
-import {
-  Loader2,
-  Mail,
-  User,
-  Lock,
-  ArrowRight,
-  AlertCircle,
-} from "lucide-react";
+import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
+import { Label } from "@/components/ui/label"
+import { Loader2, Mail, User, Lock, ArrowRight, AlertCircle } from "lucide-react";
 
-const STRAPI_URL = "https://committed-desk-9b61e987b3.strapiapp.com";
+const STRAPI_URL = "https://charming-prosperity-2cd7125609.strapiapp.com";
 
 const Register = () => {
   const [email, setEmail] = useState("");
@@ -57,7 +44,7 @@ const Register = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+    
     if (!validatePassword(password)) {
       toast.error("Please fix the password errors", {
         icon: "🚫",
@@ -158,9 +145,7 @@ const Register = () => {
                     onChange={handlePasswordChange}
                     type="password"
                     placeholder="Create a password"
-                    className={`pl-10 ${
-                      passwordError ? "border-red-500 focus:ring-red-500" : ""
-                    }`}
+                    className={`pl-10 ${passwordError ? "border-red-500 focus:ring-red-500" : ""}`}
                     required
                   />
                   {passwordError && (
@@ -201,4 +186,4 @@ const Register = () => {
   );
 };
 
-export default Register;
+export default Register;ƒ
